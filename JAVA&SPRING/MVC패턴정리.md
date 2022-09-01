@@ -1,0 +1,7 @@
+
+# MVC 패턴 정리
+
+
+참고 : 
+
+https://velog.io/@cil05265/MVC-%EC%9B%B9-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%B0%8F-%EC%8A%A4%ED%94%84%EB%A7%81-MVC
