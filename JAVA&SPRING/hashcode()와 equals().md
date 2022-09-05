@@ -76,6 +76,38 @@ public boolean equals(Object anObject) {
 
 ## hashcode() 함수는?
 
+> 각 객체의 주소값을 변환하여 생성한 객체의 고유한 정수값
+> 객체의 hashCode를 리턴
+
+<br><br>
+
+```java
+
+//String은 재정의한 equals()에서 각 문자열에서 한 글자씩 비교하는 방식인데 비해,
+//hashCode()는 문자열에서 한 글자씩 가져와서 정수값으로 변경.
+//한 글자를 가져와 정수와 더하면 해당 글자의 ascii 코드 값을 사용한다.
+
+int h = hash;
+if (h ==0 && value.length > 0) {
+    char val[] = value;
+    
+    for (int i=0; i <value.length; i++) {
+        h = 31 * h + val[i];
+    }
+    hash = h;
+}
+return h;
+
+
+```
+
+- 31 곱하는 이유는 홀수이기 때문. 짝수를 곱했을 때 오버플로우 되면 정보 손실 발생 가능성
+- 이진수에서 2를 곱하면 비트가 왼쪽으로 한 비트씩 이동하기 때문.
+- 홀수 중 31의 장점은 31 * i 가 (i<<5) - i 와 같기 때문에 곱셈 대신 비트 이동 및 뺄셈으로 처리하여 성능면에서 우위
+- 하지만 요즘 VM은 자동으로 최적화.
+
+
 
 참고 : 
 https://www.baeldung.com/java-hashcode
+https://brunch.co.kr/@mystoryg/133
