@@ -68,7 +68,15 @@ public class Writer extends FlatFileItemWriter<Employee> {
 
 ```
 
+더 참고해서 보충할 자료:
 
-## MultiResourceItemReader
+https://howtodoinjava.com/spring-batch/flatfileitemwriter-write-to-csv-file/ <br>
+https://howtodoinjava.com/java/library/supercsv-parse-read-write-csv/ <br>
+
+
+
+
+
+## MultiResourceItemReader & MultiResourceItemWriter
 
 
