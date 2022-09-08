@@ -5,6 +5,9 @@
 
 - 모래알과 같은 것. 바이트 단위로 쪼개서 그릇에 담기 좋음
 
+- 주요 메서드 참고 (다시 정리 작성) 
+https://zzdd1558.tistory.com/154
+
 
 ### S3 업로드 inputStream으로 넣을 때,
 
@@ -20,6 +23,9 @@
   metadata.setContentType("text/csv") // csv 파일로 넣을 때
 
 ```
+
+
+
 
 
 ## Buffered Input/Output Stream vs 일반 Stream과 속도 비교 
