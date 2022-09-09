@@ -1,10 +1,12 @@
 
 # 1. Bean 등록 방법
 
+### @Bean(name="") vs @Qualifier("") @Bean
+
+
 
 # 2. 등록된 Bean 찾아오기
 
-### @Bean(name="") vs @Qualifier("") @Bean
 
 
 
