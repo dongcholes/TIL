@@ -27,6 +27,17 @@ https://zzdd1558.tistory.com/154
 
 
 
+### InputStream 한글 깨짐현상
+
+한글은 2~3byte인데 inputStream 바이트 단위로 쪼개므로 깨짐
+
+Buffer 사용
+
+https://young-ja-tmi-it.tistory.com/99
+
+
+
+
 
 ## Buffered Input/Output Stream vs 일반 Stream과 속도 비교 
 
