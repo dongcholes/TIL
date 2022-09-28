@@ -10,6 +10,10 @@ String에 carriage return(개행문자)이 들어가 있을때 해결방법
 s = s.replaceAll("\\n", "");
 s = s.replaceAll("\\r", "");
 
+
+// one row through regExp
+s.replaceAll("(?:\\n|\\r)", "");
+
 ```
 
 <br><br>
