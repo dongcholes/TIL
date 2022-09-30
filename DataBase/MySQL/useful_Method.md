@@ -14,11 +14,13 @@ SUBSTRING(string FROM start FOR length)
 
 <br><br>
 
-<br>
 출처 : https://www.w3schools.com/sql/func_mysql_substring.asp
 
 
 
+<br>
+<br>
+<br>
 ### CAST( {data} AS {dataType} )
 
 CONVERT 함수로도 사용할 수 있음.
