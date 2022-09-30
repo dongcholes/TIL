@@ -18,9 +18,8 @@ SUBSTRING(string FROM start FOR length)
 
 
 
-<br>
-<br>
-<br>
+<br><br><br>
+
 ### CAST( {data} AS {dataType} )
 
 CONVERT 함수로도 사용할 수 있음.
