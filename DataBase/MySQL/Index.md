@@ -9,7 +9,7 @@
 
 ## INDEX의 자료구조
 
-1. Hash Table
+### 1. Hash Table
 
 ![image](https://user-images.githubusercontent.com/74232355/186689375-e015337b-4662-417b-b8b7-dccba3cdb1ba.png)
 
@@ -18,7 +18,7 @@
 - 특정 컬럼의 값과 데이터의 위치를 key-value로 사용
 - '버켓' 이라는 배열 존재
 - 해시함수를 통해 Key를 고유한 해시값으로 변환하여 버켓 배열의 index로 사용
-- 평균적인 시간 복잡도는 O(1)
+- 평균적인 시간 복잡도는 O(1)로 매우 빠른 검색 지원 
 - 해시 함수를 제대로 정의하지 않으면 해시함수를 통해 산출한 해시 값이 중복되는 '해시 충돌' 이 발생
 - 해시 충돌 발생 시 검색 성능이 하락해 시간복잡도가 O(N)에 수렴할 수도 있다.
 
@@ -27,7 +27,7 @@
 - 해시 테이블은 내부 데이터들이 정렬되어 있지 않아 탐색이 비효율적
 
 
-2. B- Tree
+### 2. B- Tree
 
 ![image](https://user-images.githubusercontent.com/74232355/186691866-7fa45cb1-1b07-4164-821c-c8bc1e254358.png)
 
@@ -44,8 +44,23 @@
 
 - Index가 적용된 테이블에 데이터 갱신(INSERT , UPDATE, DELETE)가 반복되면서 트리의 균형이 깨지면 성능이 악화된다.
 
-3. B+ Tree
+### 3. B+ Tree
+
+B+ Tree 는 모든 노드에 value를 저장하는 BTree와 다른 특성을 갖고 있다.
+- 리프노드만 인덱스 + 데이터(value), 나머지 노드들은 데이터를 위한 Index(key)만 가짐.
+- 리프노드는 LinkedList로 연결
+- 데이터 노드는 크기는 인덱스 노드의 크기와 같지 않아도 된다.
+- 인덱스 컬럼에서 부등호를 사용하는 순차검색이 빈번하게 일어나기 때문에 BTree의 리프노드들을 LinkedList로 연결하여 순차검색을 용이하게 함.
+-  Best Case에 대해 리프노드까지 가지 않아도 탐색할 수 있는 BTree에 비해 무조건 리프노드까지 가야한다는 단점
+-  비록 B+Tree는 O(log2nlog2n{log_2n}) 의 시간복잡도를 갖지만 해시테이블보다 인덱싱에 더욱 적합한 자료구조
 
 
 
-참고 : https://tecoble.techcourse.co.kr/post/2021-09-18-db-index/
+
+![image](https://user-images.githubusercontent.com/74232355/193821108-e9562f75-1f2a-4912-9bd0-0cbbb3d2a487.png)
+
+
+
+참고 : <br>
+https://tecoble.techcourse.co.kr/post/2021-09-18-db-index/ <br>
+https://mangkyu.tistory.com/96
