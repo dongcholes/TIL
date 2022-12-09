@@ -1,7 +1,10 @@
 
 # Linux Commands
 
-### -f tail
+### tail -f
+ 실시간
+### tail -n 
+ 최근 n 줄만 보기
 
 
 
